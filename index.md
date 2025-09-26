@@ -3,8 +3,8 @@ layout: default
 title: 首页
 ---
 
-# 欢迎来到我的博客
+# 你好，这是首页（测试）
+如果你能看到这行，说明站点发布成功。
 
-这里是首页。  
-- 查看我的文章请滚动页面或访问文章链接。
-[联系我 →]({{ '/contact/' | relative_url }})
+- [联系我]({{ '/contact/' | relative_url }})
+- [文章]({{ '/' | relative_url }})
