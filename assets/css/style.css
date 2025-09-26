@@ -1,7 +1,3 @@
-/* 只隐藏头部“View on GitHub”按钮（Cayman） */
+/* Cayman 主题：隐藏头部 “View on GitHub” 按钮与底部署名 */
 .page-header .btn[href*="github.com"] { display: none !important; }
-
-/* 只隐藏底部 GitHub Pages 的署名（保留页脚外观） */
 .site-footer-credits { display: none !important; }
-
-/* 如还有“Download .zip/.tar.gz”，关掉下载按钮（配合 _config.yml） */
