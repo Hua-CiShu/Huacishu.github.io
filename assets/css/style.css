@@ -1,0 +1,6 @@
+/* 适配 pages-themes/cayman 等 */
+.page-header .btn { display: none !important; }     /* 隐藏“View on GitHub”按钮 */
+.site-footer,
+.site-footer-credits,
+footer,
+.footer { display: none !important; }               /* 隐藏底部“由 GitHub Pages 生成”等字样 */
