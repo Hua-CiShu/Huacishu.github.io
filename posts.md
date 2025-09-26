@@ -11,7 +11,7 @@ permalink: /posts/
       <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
       <small>（{{ post.date | date: "%Y-%m-%d" }}）</small>
     </li>
-  {% empty %}
-    <li>还没有文章哦～ 在 <code>_posts/</code> 目录里新建一篇。</li>
+  {% else %}
+    <li>还没有文章哦～ 在 <code>_posts/</code> 目录里新建一篇（文件名形如 <code>YYYY-MM-DD-标题.md</code>）。</li>
   {% endfor %}
 </ul>
