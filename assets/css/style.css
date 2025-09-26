@@ -1,3 +1,0 @@
-/* Cayman 主题：隐藏头部 “View on GitHub” 按钮与底部署名 */
-.page-header .btn[href*="github.com"] { display: none !important; }
-.site-footer-credits { display: none !important; }
