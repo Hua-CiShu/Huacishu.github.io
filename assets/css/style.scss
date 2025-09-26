@@ -1,0 +1,8 @@
+---
+---
+// 先把主题的样式引入进来（这行非常关键！）
+@import "{{ site.theme }}";
+
+/* 然后写你的覆写规则（只隐藏 GitHub 的按钮/署名，不动其他样式） */
+.page-header .btn[href*="github.com"] { display: none !important; }
+.site-footer-credits { display: none !important; }
