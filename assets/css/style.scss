@@ -1,30 +1,7 @@
 ---
 ---
-/* 先引入当前主题样式（关键） */
-@import "{{ site.theme }}";
+@import "{{ site.theme }}";   /* 自动引入上面配置的主题样式 */
 
-/* 通用：隐藏页头里指向 github.com 的按钮/链接 */
-.page-header a[href*="github.com"],
-.site-header a[href*="github.com"],
-header a.btn[href*="github.com"] { display: none !important; }
-
-/* 通用：隐藏底部的 credits/署名 */
-.site-footer-credits,
-footer .site-footer-credits { display: none !important; }
-
-/* —— 常见主题的额外选择器 —— */
-
-/* Cayman / Slate / Modernist 等：头部“View on GitHub”通常是 .btn */
-.page-header .btn[href*="github.com"] { display: none !important; }
-
-/* Minimal / Dinky / Merlot：有的把按钮放在 .site-header 或 .page-header 内 */
-.site-header .btn[href*="github.com"],
-.site-header a[href*="github.com"] { display: none !important; }
-
-/* Leap-day / Midnight：页脚类名不同，兜底隐藏 footer 最后一行署名 */
-footer p a[href*="github.com"],
-footer p:has(a[href*="github.com"]) { display: none !important; } /* :has 支持新浏览器，旧浏览器忽略也无妨 */
-
-/* 如果主题显示 “Download .zip/.tar.gz”，搭配 _config.yml 的 show_downloads: false 一起用 */
-a[href$=".zip"], a[href$=".tar.gz"] { display: none !important; }
-
+/* 你的覆写（示例：隐藏 GitHub 元素） */
+.page-header .btn[href*="github.com"] { display:none !important; }
+.site-footer-credits { display:none !important; }
