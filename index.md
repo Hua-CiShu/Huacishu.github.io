@@ -8,3 +8,4 @@ title: 首页
 
 - [联系我]({{ '/contact/' | relative_url }})
 - [文章]({{ '/' | relative_url }})
+
