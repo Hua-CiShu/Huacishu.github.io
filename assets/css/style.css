@@ -1,6 +1,7 @@
-/* 适配 pages-themes/cayman 等 */
-.page-header .btn { display: none !important; }     /* 隐藏“View on GitHub”按钮 */
-.site-footer,
-.site-footer-credits,
-footer,
-.footer { display: none !important; }               /* 隐藏底部“由 GitHub Pages 生成”等字样 */
+/* 只隐藏头部“View on GitHub”按钮（Cayman） */
+.page-header .btn[href*="github.com"] { display: none !important; }
+
+/* 只隐藏底部 GitHub Pages 的署名（保留页脚外观） */
+.site-footer-credits { display: none !important; }
+
+/* 如还有“Download .zip/.tar.gz”，关掉下载按钮（配合 _config.yml） */
