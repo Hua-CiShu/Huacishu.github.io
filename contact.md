@@ -1,3 +1,9 @@
+---
+layout: page
+title: 联系我
+permalink: /contact/
+---
+
 <form action="https://formspree.io/f/mdkwkyyy" method="POST" style="max-width:520px">
   <label>你的名字
     <input name="name" required>
